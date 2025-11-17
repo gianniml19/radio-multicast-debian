@@ -1,0 +1,33 @@
+services:
+  radio-multicast-debian:
+
+    # Build the Docker image using the local Dockerfile
+    build: .
+    # Name of the container
+    container_name: radio-multicast-debian
+
+    # Use the host network:
+    # - required for proper UDP multicast streaming into the LAN
+    # - avoids NAT and port-mapping issues
+    # Note: host networking works only on Linux systems
+    network_mode: "host"
+    # Automatically restart the container unless it was manually stopped
+    restart: unless-stopped
+
+    volumes:
+      # Mount the M3U playlist from the host into the container (read-only)
+      - ./stations.m3u:/data/stations.m3u:ro
+      # Optional: mount a folder containing local audio files (read-only)
+      # These files can be referenced in the playlist using /data/audio/...
+      - ./audio:/data/audio:ro
+
+    environment:
+      # Maximum number of streams processed from the playlist
+      - MAX_STREAMS=20
+      # Base multicast address
+      # Example: 239.10.10 → 239.10.10.1, 239.10.10.2, 239.10.10.3, ...
+      - BASE_ADDR=239.10.10
+      # UDP port used by all multicast streams
+      - PORT=5000
+      # Time To Live value for multicast packets
+      - TTL=5
