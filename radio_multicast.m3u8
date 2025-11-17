@@ -1,0 +1,61 @@
+#EXTM3U
+
+#EXTINF:-1,SRF 1 Zentralschweiz
+udp://@239.10.10.1:5000
+
+#EXTINF:-1,SRF 2
+udp://@239.10.10.2:5000
+
+#EXTINF:-1,SRF 3
+udp://@239.10.10.3:5000
+
+#EXTINF:-1,Radio Pilatus
+udp://@239.10.10.4:5000
+
+#EXTINF:-1,SRF Musikwelle
+udp://@239.10.10.5:5000
+
+#EXTINF:-1,Radio Swiss Jazz
+udp://@239.10.10.6:5000
+
+#EXTINF:-1,Radio Swiss Pop
+udp://@239.10.10.7:5000
+
+#EXTINF:-1,Radio Swiss Classic
+udp://@239.10.10.8:5000
+
+#EXTINF:-1,Ö1
+udp://@239.10.10.9:5000
+
+#EXTINF:-1,Ö3
+udp://@239.10.10.10:5000
+
+#EXTINF:-1,Deutschlandfunk
+udp://@239.10.10.11:5000
+
+#EXTINF:-1,Deutschlandfunk Kultur
+udp://@239.10.10.12:5000
+
+#EXTINF:-1,SWR1 BW
+udp://@239.10.10.13:5000
+
+#EXTINF:-1,Bayern 1
+udp://@239.10.10.14:5000
+
+#EXTINF:-1,RSI Rete Uno
+udp://@239.10.10.15:5000
+
+#EXTINF:-1,Rai Radio 1
+udp://@239.10.10.16:5000
+
+#EXTINF:-1,RTL 102.5
+udp://@239.10.10.17:5000
+
+#EXTINF:-1,RTS La Première
+udp://@239.10.10.18:5000
+
+#EXTINF:-1,France Inter
+udp://@239.10.10.19:5000
+
+#EXTINF:-1,France Musique
+udp://@239.10.10.20:5000
